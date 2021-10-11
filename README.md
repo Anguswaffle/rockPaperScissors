@@ -1,1 +1,1 @@
-# rockPaperScissors
+# Game of Rock Paper Scissors using a while loop written in JavaScript
