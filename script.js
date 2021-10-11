@@ -18,7 +18,7 @@ while(playAgain) {
         playAgain = false;
     }
 
-    // Standardizes user's input
+    // Standardizes user's input to uppercase
     rpsUser = rpsUser.toUpperCase();
     // Computer's choice is made
     var computerChoice = rpsComputer[getRandomInt(3)];
@@ -45,9 +45,12 @@ while(playAgain) {
         var stats = "Stats: \n Wins: " + winCount + "\n Losses: " + lossCount + "\n Ties: " + tieCount;
         alert(stats);
         playAgain = confirm("Do you wish to play again?");
-
+        
     } else {
+        
+        // If user did not choose an R, P, or S, they are brought here
         alert("PLEASE ONLY CHOOSE R, P, OR S");
+        playAgain = confirm("Do you wish to try again?");
     }   
 }
 
